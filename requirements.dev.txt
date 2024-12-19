@@ -1,0 +1,3 @@
+# python code style checker if my code fits the international standard 
+flake8>=7.1.1,<8.0.0
+

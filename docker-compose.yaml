@@ -1,0 +1,13 @@
+version: "3.11" # DOCKER compose API version
+
+services: # container
+  app: # Django
+    build:
+      context: . # route
+      args:
+        - DEV=true
+    ports:
+      - "8000:8000"
+    volumes: # storage
+      - ./app:/app
+    command: sh -c "python manage.py runserver 0.0.0.0:8000"
