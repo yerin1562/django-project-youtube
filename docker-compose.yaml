@@ -1,4 +1,4 @@
-version: "3.11" # DOCKER compose API version
+# version: "3.11" # DOCKER compose API version
 
 services: # container
   app: # Django
