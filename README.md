@@ -62,3 +62,12 @@ oz-project for django rest-framework and release
     - 성능과 안정성: MVCC로 동시성과 성능 유지.
     - 오픈 소스: 무료, 대규모 커뮤니티 지원.
     - 보안: 세밀한 접근 제어와 SSL/TLS 지원.
+
+
+
+## 오류 정리
+1. docker-compose-deploy.yml
+    - context: ./proxy
+    - 들여쓰기 
+    - app-1    | exec /scripts/run.sh: exec format error
+    - proxy-1  | nc: bad address 'app'
